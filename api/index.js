@@ -1,0 +1,28 @@
+const express = require('express')
+const app = express()
+
+const db = require('../models') // 시퀄라이즈 로드
+const file_router = require('./file/file') // 파일 라우터 로드
+
+const { sequelize } = db
+
+// db 연결 및 테이블 생성
+sequelize.sync({ force: false }) 
+    .then(() => { 
+        console.log('데이터베이스 연결')
+    }).catch((err) => { 
+        console.error(err)
+    })
+
+app.use(express.urlencoded({ extended: true })) // x-www-form-urlencoded 형식 파서
+app.use(express.json()) // json 형식 파서
+
+app.use('/file', file_router) 
+app.use('/', (req, res) => { 
+    res.status(200).send('test ok') 
+})
+
+module.exports = {
+    path: '/api',
+    handler: app
+}
