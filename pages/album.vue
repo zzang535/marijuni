@@ -105,6 +105,8 @@ export default {
                 )
                 console.log(result)
                 window.alert('completed!')
+                this.comment = ''
+                this.image_file = null
                 this.get_feeds()
             } catch (err) {
                 console.log(err)
