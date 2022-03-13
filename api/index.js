@@ -14,8 +14,20 @@ sequelize.sync({ force: false })
         console.error(err)
     })
 
-app.use(express.urlencoded({ extended: true })) // x-www-form-urlencoded 형식 파서
-app.use(express.json()) // json 형식 파서
+
+// json 형식 파서
+app.use(express.json({
+    limit: '50mb'
+})) 
+
+// x-www-form-urlencoded 형식 파서
+app.use(express.urlencoded({ 
+    limit: '50mb',
+    parameterLimit: 100000,
+    extended: true
+})) 
+
+
 
 app.use('/file', file_router) 
 app.use('/', (req, res) => { 
