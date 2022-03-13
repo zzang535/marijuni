@@ -104,6 +104,8 @@ export default {
                     { headers: { 'Content-Type': 'multipart/form-data' } }
                 )
                 console.log(result)
+                window.alert('completed!')
+                this.get_feeds()
             } catch (err) {
                 console.log(err)
             }
