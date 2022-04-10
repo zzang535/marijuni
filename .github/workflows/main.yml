@@ -23,6 +23,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           script: |
+            sudo -su ubuntu
             cd /home/ubuntu/marijuni
             git pull
             pm2 stop 0
