@@ -116,7 +116,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'MARIJUNI'
+      title: 'MARIJUNI2'
     }
   }
 }
