@@ -23,7 +23,8 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           script: |
-            cd /var/www
+            cd /var/www/marijuni
             git pull
+            pm2 stop 0
             npm run build
-            pm2 start
+            pm2 start 1
