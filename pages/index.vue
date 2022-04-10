@@ -43,6 +43,7 @@ export default {
                 <br>今日の写真を選んでみました!`,
             feeds: [],
             feed: null,
+            date: '',
         }
     },
     methods: {
@@ -71,7 +72,7 @@ export default {
         },
         rand(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min
-        }
+        },
     },
     created() {
         this.get_feeds_and_pick()

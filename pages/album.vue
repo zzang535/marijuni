@@ -120,11 +120,15 @@ export default {
             } catch (err) {
                 console.log(err)
             }
-        }
+        },
+        
+       
     },
     created() {
         this.get_today()
         this.get_feeds()
+
+        
     }
 }
 </script>
