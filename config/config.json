@@ -1,26 +1,41 @@
 {
   "development": {
-    "username": "root",
+    "username": "bird",
     "password": "01273100",
     "database": "bird",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "dialect": "mysql",
+    "dialectOptions": {
+      "options": {
+        "requestTimeout": 3000
+      }
+    },
     "timezone": "+09:00"
   },
   "test": {
-    "username": "root",
+    "username": "bird",
     "password": "01273100",
     "database": "bird",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "dialect": "mysql",
+    "dialectOptions": {
+      "options": {
+        "requestTimeout": 3000
+      }
+    },
     "timezone": "+09:00"
   },
   "production": {
     "username": "bird",
     "password": "01273100",
     "database": "bird",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "dialect": "mysql",
+    "dialectOptions": {
+      "options": {
+        "requestTimeout": 3000
+      }
+    },
     "timezone": "+09:00"
   }
 }

@@ -72,8 +72,16 @@ export default {
 
   },
 
-  // 서버 미들웨어 디폴트 경로 설정 - by June
+  //* 서버 미들웨어 디폴트 경로 설정 - by June
   serverMiddleware: [
     '~/api'
   ],
+
+  //* 웹팩 시간지연 ? - by June
+  watchers: {
+    webpack: {
+      aggregateTimeout: 300,
+      poll: 1000
+    }
+  }
 }
