@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const db = require('../models') // 시퀄라이즈 로드
+const db = require('../db/models') // 시퀄라이즈 로드
 const file_router = require('./file/file') // 파일 라우터 로드
 
 const { sequelize } = db

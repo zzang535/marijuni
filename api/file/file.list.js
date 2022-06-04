@@ -1,4 +1,4 @@
-const { Feed } = require('../../models') // feed 로드
+const { Feed } = require('../../db/models') // feed 로드
 
 export async function list(req, res) {
     try {
