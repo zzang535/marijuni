@@ -19,9 +19,26 @@ $ npm run generate
 
 ## dev .env
 ```bash
+# app
+APP_PORT=3000
+APP_HOST=0.0.0.0
+
 # db
 DB_USERNAME=bird
 DB_PASSWORD=01273100
 DB_DATABASE=bird
-DB_HOST=localhost
+DB_HOST=172.17.0.2
+```
+
+## production .env
+```bash
+# app
+APP_PORT=3000
+APP_HOST=0.0.0.0
+
+# db
+DB_USERNAME=bird
+DB_PASSWORD=01273100
+DB_DATABASE=bird
+DB_HOST=172.17.0.2
 ```

@@ -77,11 +77,9 @@ export default {
     '~/api'
   ],
 
-  //* 웹팩 시간지연 ? - by June
-  watchers: {
-    webpack: {
-      aggregateTimeout: 300,
-      poll: 1000
-    }
-  }
+  server: {
+    port: process.env.APP_PORT,
+    host: process.env.APP_HOST
+  },
+
 }
