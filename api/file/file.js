@@ -28,15 +28,7 @@ const upload = multer({
     })
 })
 
-file_router.post(
-    '/upload_feed', 
-    upload.single('image_file'), 
-    upload_feed.upload_feed
-)
-
-file_router.get(
-    '/list', 
-    list.list
-)
+file_router.post('/upload_feed', upload.single('image_file'), upload_feed.upload_feed)
+file_router.get('/list', list.list)
 
 module.exports = file_router

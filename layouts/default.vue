@@ -102,21 +102,21 @@ export default {
           title: 'marijuni',
           to: '/'
         },
-        // {
-        //   icon: 'mdi-chart-bubble',
-        //   title: 'Inspire',
-        //   to: '/inspire'
-        // },
         {
           icon: 'mdi-chart-bubble',
           title: 'album',
           to: '/album'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'history',
+          to: '/history'
         }
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'MARIJUNI2'
+      title: 'MARIJUNI'
     }
   }
 }
